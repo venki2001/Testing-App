@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index </title>
+</head>
+<body>
+    <p>Welcome to Index Page </p>
+    <p> Today is {{ current_Day_week }} and The Time is {{current_time}}</p>
+
+    <div class="centred">
+        <form action='/signup' method="POST">
+            <label for="usr"> Username : </label>
+            <input type="text" id="usr" name="user" placeholder="Enter name ">
+            <br><br>
+
+            <label for="pwd"> Password :</label>
+            <input type="password" id="pwd" name="pass" placeholder="Enter password">
+            <br><br>
+            <input type="submit" value="Muchkant Admuu">
+
+        </form>
+    </div>
+
+    <div class="centred">
+        <a href="/get_data">
+            <button type="button">View Data</button>
+        </a>
+    </div>
+</body>
+
+
+<style>
+    body {
+        background-color : red;
+    }
+
+    p {
+        text-align : center;
+        font-size :20px ;
+        color : black ;
+
+    }
+    .centred{
+        text-align : center;
+        font-size :20px ;
+        color : purple ;
+    }
+</style>
+</html>
+
+
+
+
+
